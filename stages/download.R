@@ -8,5 +8,7 @@ options(timeout = 600)
 download.file(invitrodb, destfile = stage, mode = "wb")
 
 df = readr::read_csv(stage)
-out = fs::dir_create("brick") |> fs::path("invitrodb.parquet")
-arrow::write_parquet(df, out)
+out = fs::dir_create("brick/invitrodb.parquet")
+
+# Write as a dataset to avoid the 2GB limit of a single parquet file
+arrow::write_dataset(df, out, max_rows_per_file = 1e6)
