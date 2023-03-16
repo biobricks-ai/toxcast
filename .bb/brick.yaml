@@ -1,0 +1,185 @@
+invitrodb:
+  reference: https://clowder.edap-cluster.com/files/62cee26ee4b055edffbba11d?dataset=62c435c7e4b01d27e3b2b61f&space=62bb560ee4b07abf29f88fef
+  columns:  
+    m5id:
+      description: unique id level 5 processing
+    spid:
+      description: sample id (id blindly provided to vendors)
+    chid:
+      description: chemical id (DSSTox GSID) 1:1 with casrn
+    casn:
+      description: CAS Registry number
+    chnm:
+      description: chemical name
+    code:
+      description: CAS Registry number (excel protected)
+    aeid:
+      description: assay endpoint id (unique id)
+    aenm:
+      description: assay endpoint name
+    m4id:
+      description: unique id for level 4 processing
+    bmad:
+      description: baseline median absolute deviation (noise around baseline)
+    resp_max:
+      description: maximal single replicate response
+    resp_min:
+      description: minimal single replicate response
+    max_mean:
+      description: maximal mean response at a given concentration
+    max_mean_conc:
+      description: corresponding concentration of max_mean
+    max_med:
+      description: maximal median response at a given concentration
+    max_med_conc:
+      description: corresponding concentration of max_med
+    logc_max:
+      description: maximum tested log concentration (log uM)
+    logc_min:
+      description: minimum tested log concentration (log uM)
+    cnst:
+      description: constant model successfully run (1 or 0)
+    hill:
+      description: hill model successfully run (1 or 0)
+    hcov:
+      description: hill model covariance
+    gnls:
+      description: gain-loss model successfully run (1 or 0)
+    gcov:
+      description: gain-loss model covariance
+    cnst_er:
+      description: constant model error term
+    cnst_aic:
+      description: constant model AIC (used to select winning model)
+    cnst_rmse:
+      description: constant model RMSE
+    cnst_prob:
+      description: constant model probability (based on AIC)
+    hill_tp:
+      description: hill model top of curve
+    hill_tp_sd:
+      description: hill model top standard deviation
+    hill_ga:
+      description: hill model logAC50 (gain logAC50)
+    hill_ga_sd:
+      description: hill model AC50 standard deviation
+    hill_gw:
+      description: hill model slope
+    hill_gw_sd:
+      description: hill model slope standard deviation
+    hill_er:
+      description: hill model error term
+    hill_er_sd:
+      description: hill model error standard deviation
+    hill_aic:
+      description: hill model AIC (used to select winning model)
+    hill_rmse:
+      description: hill model RMSE
+    hill_prob:
+      description: hill model probability (based on AIC)
+    gnls_tp:
+      description: gain-loss top of curve
+    gnls_tp_sd:
+      description: gain-loss top of curve standard deviation
+    gnls_ga:
+      description: gain-loss model gain logAC50
+    gnls_ga_sd:
+      description: gain-loss model gain logAC50 standard deviation
+    gnls_gw:
+      description: gain-loss model gain slope (positive)
+    gnls_gw_sd:
+      description: gain-loss model gain slope standard deviation
+    gnls_la:
+      description: gain-loss model loss logAC50
+    gnls_la_sd:
+      description: gain-loss model loss logAC50 standard deviation
+    gnls_lw:
+      description: gain-loss model loss slope (negative)
+    gnls_lw_sd:
+      description: gain-loss model loss slope standard deviation
+    gnls_er:
+      description: gain-loss model error term
+    gnls_er_sd:
+      description: gain-loss model error standard deviation
+    gnls_aic:
+      description: gain-loss model AIC (used to select model winner)
+    gnls_rmse:
+      description: gain-loss model RMSE
+    gnls_prob:
+      description: gain-loss model probability (based on AIC)
+    nconc:
+      description: number of tested concentrations
+    npts:
+      description: number of data points
+    nrep:
+      description: number of replicates
+    nmed_gtbl:
+      description: number of median values greater than baseline
+    hitc:
+      description: hit call (based on ‘coff’ and winning model) positive =1, negative =0, not enough data to fit =-1; max_med must exceed coff
+    modl:
+      description: winning model
+    fitc:
+      description: fit category (defined by many parameters)
+    coff:
+      description: response cutoff (used to define hit-call)
+    actp:
+      description: activity probability (1-cnst_prob)
+    modl_er:
+      description: winning model error term
+    modl_tp:
+      description: winning model top of curve (where applicable)
+    modl_ga:
+      description: winning model gain logAC50 (where applicable)
+    modl_gw:
+      description: winning model gain slope (where applicable)
+    modl_la:
+      description: winning model loss logAC50 (where applicable)
+    modl_lw:
+      description: winning model loss slope (where applicable)
+    modl_rmse:
+      description: winning model RMSE
+    modl_prob:
+      description: winning model probability
+    modl_acc:
+      description: winning model log concentration at ‘coff’
+    modl_acb:
+      description: winning model log concentration at ‘bmad’
+    resp_unit:
+      description: response units
+    flag_id:
+      description: concatenated list of flag ids
+    flag:
+      description: concatenated list of flag names
+    chit:
+      description: chemical-level hit call
+    stkc:
+      description: stock concentration of sample
+    stkc_unit:
+      description: stock concentration unit, typically mM
+    test_conc_unit:
+      description: tested concentration unit, typically uM
+    spid_legacy:
+      description: legacy sample id
+    gsid_rep:
+      description: representative sample; based on tcplSubsetChid()
+    hit_pct:
+      description: Total percent of hit calls made after 1000 bootstraps
+    total_hitc:
+      description: Total number of hit calls made after 1000 bootstraps
+    modl_ga_min:
+      description: Low bound of the 95% confidence interval for the AC50
+    modl_ga_max:
+      description: Upper bound of the 95% confidence interval for the AC50
+    modl_ga_med:
+      description: Median AC50 after 1000 bootstraps
+    modl_gw_med:
+      description: Median gain Hill coefficient for 1000 bootstraps
+    modl_ga_delta:
+      description: AC50 confidence interval width in log units
+    cnst_pct:
+      description: Percent of 1000 bootstraps that the constant model was selected as the winning model
+    hill_pct:
+      description: Percent of 1000 bootstraps that the Hill model was selected as the winning model
+    gnls_pct:
+      description: Percent of 1000 bootstraps that the gain-loss was selected as the winning model
