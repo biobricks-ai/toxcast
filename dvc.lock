@@ -18,5 +18,6 @@ stages:
       size: 36211
     outs:
     - path: brick/invitrodb.parquet
-      md5: 8e972c6ad1c5da238c5f990cd446469f
-      size: 617849347
+      md5: 7053480a1295b0c557da215018f0ad32.dir
+      size: 722383594
+      nfiles: 4
