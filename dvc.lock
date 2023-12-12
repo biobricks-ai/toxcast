@@ -14,10 +14,12 @@ stages:
     cmd: Rscript stages/download.R
     deps:
     - path: https://clowder.edap-cluster.com/spaces/62bb560ee4b07abf29f88fef
-      checksum: '252238689928586433502873006460489000490'
-      size: 36211
+      hash: md5
+      checksum: '308151993323152722451194344924838091589'
+      size: 33866
     outs:
     - path: brick/invitrodb.parquet
-      md5: 7053480a1295b0c557da215018f0ad32.dir
-      size: 722383594
+      hash: md5
+      md5: c1b8f4717ddbc96732bfad7c78257edc.dir
+      size: 722321276
       nfiles: 4
