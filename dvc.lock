@@ -17,9 +17,13 @@ stages:
       hash: md5
       checksum: '308151993323152722451194344924838091589'
       size: 33866
+    - path: stages/download.R
+      hash: md5
+      md5: fde14a12dfe43458e11081702c2d3625
+      size: 831
     outs:
     - path: brick/invitrodb.parquet
       hash: md5
-      md5: c1b8f4717ddbc96732bfad7c78257edc.dir
-      size: 722321276
+      md5: 79a0001b906d40f06a0efa2fea6a4bc1.dir
+      size: 718228047
       nfiles: 4
