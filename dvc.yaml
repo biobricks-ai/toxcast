@@ -3,5 +3,6 @@ stages:
     cmd: Rscript stages/download.R
     deps:
       - https://clowder.edap-cluster.com/spaces/62bb560ee4b07abf29f88fef
+      - stages/download.R
     outs:
       - brick/invitrodb.parquet

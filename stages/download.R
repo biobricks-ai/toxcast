@@ -14,7 +14,7 @@ out = fs::dir_create("brick/invitrodb.parquet")
 # See
 #  - analysis/dump-ddl.sh
 #  - analysis/join.R
-df %>% mutate(across(
+df <- df %>% mutate(across(
 	c(
 		aeid,
 		chid,
