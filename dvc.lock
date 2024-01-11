@@ -19,11 +19,11 @@ stages:
       size: 33866
     - path: stages/download.R
       hash: md5
-      md5: fde14a12dfe43458e11081702c2d3625
-      size: 831
+      md5: ec800973d471bab40b8abda8e60f39cc
+      size: 1025
     outs:
     - path: brick/invitrodb.parquet
       hash: md5
-      md5: 79a0001b906d40f06a0efa2fea6a4bc1.dir
-      size: 718228047
+      md5: 110a6e966af64a8ad0c686b7bf8c908e.dir
+      size: 718228060
       nfiles: 4
