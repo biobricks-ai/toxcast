@@ -8,7 +8,9 @@ invitrodb = "https://clowder.edap-cluster.com/files/63642290e4b04f6bb140a10d/blo
 options(timeout = 600)
 download.file(invitrodb, destfile = stage, mode = "wb")
 
-df = readr::read_csv(stage)
+# Need encoding due to the ± character:
+#   $ perl -F, -nE 'next unless /[^\x00-\x7F]/; say $F[3]' staging/invitrodb.csv  | sort | uniq -c
+df = readr::read_csv( file = stage, locale = readr::locale(encoding = "latin1") )
 out = fs::dir_create("brick/invitrodb.parquet")
 
 # See
