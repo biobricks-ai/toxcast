@@ -1,5 +1,12 @@
 invitrodb:
-  reference: https://clowder.edap-cluster.com/files/62cee26ee4b055edffbba11d?dataset=62c435c7e4b01d27e3b2b61f&space=62bb560ee4b07abf29f88fef
+  reference: https://clowder.edap-cluster.com/spaces/687e388ce4b02565bc3e28e4
+  version: invitrodb v4.3 (Aug 2025), mc5-6 winning-model fits + flags summary
+  note: >-
+    Column set follows the invitrodb v4.3 tcplfit2 mc5-6 schema; see
+    .bb/datapackage.json for the authoritative column list. Some v3.5
+    column descriptions below (per-model cnst_*/hill_*/gnls_*/modl_*
+    fields) were replaced in v4.x by flattened tcplfit2 winning-model
+    parameters (ac50, top, ga, la, bmd, bmdl, bmdu, hitcall, model_type).
   columns:  
     m5id:
       description: unique id level 5 processing

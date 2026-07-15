@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "biobricks": "https://biobricks.ai/ns#"
+  },
+  "@type": "dcat:Dataset",
+  "@id": "https://biobricks.ai/bricks/toxcast",
+  "dcterms:title": "toxcast",
+  "dcterms:description": "US EPA ToxCast / invitrodb v4.3 (August 2025). Level-5/6 (mc5-6) winning-model fits and flags summary: in vitro high-throughput bioactivity data with tcplfit2 concentration-response curve fits, potency estimates (ac50, bmd, acc) and continuous hit calls for ToxCast/Tox21 assay endpoints.",
+  "dcterms:hasVersion": "invitrodb v4.3",
+  "dcterms:issued": "2025-08-21",
+  "dcterms:publisher": "US Environmental Protection Agency, Center for Computational Toxicology and Exposure (CCTE)",
+  "dcterms:identifier": "https://doi.org/10.23645/epacomptox.6062623.v14",
+  "dcterms:license": "Public Domain (US Government Work / CC0)",
+  "biobricks:licenseClass": "commercial-OK",
+  "biobricks:reviewed": false,
+  "biobricks:reviewNotes": "Updated from invitrodb v3.5 mc5 flat CSV to invitrodb v4.3 mc5-6 winning-model summary (tcplfit2 schema). Source file: mc5-6_winning_model_fits-flags_invitrodbv4_3_AUG2024.csv inside INVITRODB_SUMMARY.zip.",
+  "prov:wasDerivedFrom": {
+    "@type": "dcat:Dataset",
+    "@id": "https://clowder.edap-cluster.com/spaces/687e388ce4b02565bc3e28e4",
+    "dcterms:title": "invitrodb v4.3 (EPA-ORD-CCTE Clowder)",
+    "dcat:downloadURL": "https://clowder.edap-cluster.com/api/files/68af6b70e4b02565fc7c3a98/blob",
+    "dcterms:identifier": "https://doi.org/10.23645/epacomptox.6062623.v14"
+  }
+}

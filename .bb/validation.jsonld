@@ -1,0 +1,365 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@type": "prov:Entity",
+  "schema:name": "toxcast validation report",
+  "prov:generatedAtTime": "2026-07-15T17:06:13Z",
+  "bb:validator": "tools/bb_validate.py",
+  "bb:verdict": "PASS",
+  "bb:summary": {
+    "n_parquet_files": 1,
+    "total_rows": 3527285,
+    "total_bytes": 783268567,
+    "note": ""
+  },
+  "bb:deterministic_checks": [
+    {
+      "file": "invitrodb.parquet",
+      "path": "/mnt/raid2/biobricks/toxcast/brick/invitrodb.parquet",
+      "layout": "dataset_dir",
+      "rows": 3527285,
+      "cols": 65,
+      "bytes": 783268567,
+      "n_part_files": 4,
+      "columns": [
+        {
+          "name": "spid",
+          "type": "large_string"
+        },
+        {
+          "name": "chid",
+          "type": "int64"
+        },
+        {
+          "name": "casn",
+          "type": "large_string"
+        },
+        {
+          "name": "chnm",
+          "type": "large_string"
+        },
+        {
+          "name": "dsstox_substance_id",
+          "type": "large_string"
+        },
+        {
+          "name": "code",
+          "type": "large_string"
+        },
+        {
+          "name": "aeid",
+          "type": "int64"
+        },
+        {
+          "name": "aenm",
+          "type": "large_string"
+        },
+        {
+          "name": "m4id",
+          "type": "int64"
+        },
+        {
+          "name": "bmad",
+          "type": "double"
+        },
+        {
+          "name": "resp_max",
+          "type": "double"
+        },
+        {
+          "name": "resp_min",
+          "type": "double"
+        },
+        {
+          "name": "max_mean",
+          "type": "double"
+        },
+        {
+          "name": "max_mean_conc",
+          "type": "double"
+        },
+        {
+          "name": "min_mean",
+          "type": "double"
+        },
+        {
+          "name": "min_mean_conc",
+          "type": "double"
+        },
+        {
+          "name": "max_med",
+          "type": "double"
+        },
+        {
+          "name": "max_med_conc",
+          "type": "double"
+        },
+        {
+          "name": "min_med",
+          "type": "double"
+        },
+        {
+          "name": "min_med_conc",
+          "type": "double"
+        },
+        {
+          "name": "max_med_diff",
+          "type": "double"
+        },
+        {
+          "name": "max_med_diff_conc",
+          "type": "double"
+        },
+        {
+          "name": "conc_max",
+          "type": "double"
+        },
+        {
+          "name": "conc_min",
+          "type": "double"
+        },
+        {
+          "name": "nconc",
+          "type": "int64"
+        },
+        {
+          "name": "npts",
+          "type": "int64"
+        },
+        {
+          "name": "nrep",
+          "type": "double"
+        },
+        {
+          "name": "nmed_gtbl_pos",
+          "type": "int64"
+        },
+        {
+          "name": "nmed_gtbl_neg",
+          "type": "int64"
+        },
+        {
+          "name": "m5id",
+          "type": "int64"
+        },
+        {
+          "name": "modl",
+          "type": "large_string"
+        },
+        {
+          "name": "hitc",
+          "type": "double"
+        },
+        {
+          "name": "fitc",
+          "type": "int64"
+        },
+        {
+          "name": "coff",
+          "type": "double"
+        },
+        {
+          "name": "model_type",
+          "type": "int64"
+        },
+        {
+          "name": "bmr",
+          "type": "double"
+        },
+        {
+          "name": "hitcall",
+          "type": "double"
+        },
+        {
+          "name": "top_over_cutoff",
+          "type": "double"
+        },
+        {
+          "name": "rmse",
+          "type": "double"
+        },
+        {
+          "name": "a",
+          "type": "double"
+        },
+        {
+          "name": "p",
+          "type": "double"
+        },
+        {
+          "name": "er",
+          "type": "double"
+        },
+        {
+          "name": "bmdl",
+          "type": "double"
+        },
+        {
+          "name": "bmdu",
+          "type": "double"
+        },
+        {
+          "name": "caikwt",
+          "type": "double"
+        },
+        {
+          "name": "mll",
+          "type": "double"
+        },
+        {
+          "name": "ac50",
+          "type": "double"
+        },
+        {
+          "name": "top",
+          "type": "double"
+        },
+        {
+          "name": "ac5",
+          "type": "double"
+        },
+        {
+          "name": "ac10",
+          "type": "double"
+        },
+        {
+          "name": "ac20",
+          "type": "double"
+        },
+        {
+          "name": "ac1sd",
+          "type": "double"
+        },
+        {
+          "name": "bmd",
+          "type": "double"
+        },
+        {
+          "name": "tp",
+          "type": "double"
+        },
+        {
+          "name": "q",
+          "type": "double"
+        },
+        {
+          "name": "ga",
+          "type": "double"
+        },
+        {
+          "name": "la",
+          "type": "double"
+        },
+        {
+          "name": "ac50_loss",
+          "type": "double"
+        },
+        {
+          "name": "b",
+          "type": "double"
+        },
+        {
+          "name": "acc",
+          "type": "double"
+        },
+        {
+          "name": "loec",
+          "type": "double"
+        },
+        {
+          "name": "resp_unit",
+          "type": "large_string"
+        },
+        {
+          "name": "conc_unit",
+          "type": "large_string"
+        },
+        {
+          "name": "mc6_flags",
+          "type": "large_string"
+        },
+        {
+          "name": "flag.length",
+          "type": "double"
+        }
+      ],
+      "null_fraction": {
+        "spid": 3.7e-05,
+        "chid": 0.00266,
+        "casn": 0.00266,
+        "chnm": 0.00266,
+        "dsstox_substance_id": 0.00266,
+        "code": 0.00266,
+        "aeid": 0.0,
+        "aenm": 0.0,
+        "m4id": 0.0,
+        "bmad": 0.0,
+        "resp_max": 0.0,
+        "resp_min": 0.0,
+        "max_mean": 0.0,
+        "max_mean_conc": 0.0,
+        "min_mean": 0.0,
+        "min_mean_conc": 0.0,
+        "max_med": 0.0,
+        "max_med_conc": 0.0,
+        "min_med": 0.0,
+        "min_med_conc": 0.0,
+        "max_med_diff": 0.0,
+        "max_med_diff_conc": 0.0,
+        "conc_max": 0.0,
+        "conc_min": 0.0,
+        "nconc": 0.0,
+        "npts": 0.0,
+        "nrep": 0.0,
+        "nmed_gtbl_pos": 0.0,
+        "nmed_gtbl_neg": 0.0,
+        "m5id": 0.0,
+        "modl": 0.0,
+        "hitc": 0.0,
+        "fitc": 0.0,
+        "coff": 0.0,
+        "model_type": 0.0,
+        "bmr": 0.0,
+        "hitcall": 0.0,
+        "top_over_cutoff": 0.003487,
+        "rmse": 0.003487,
+        "a": 0.410833,
+        "p": 0.762192,
+        "er": 0.003487,
+        "bmdl": 0.510558,
+        "bmdu": 0.697151,
+        "caikwt": 0.003487,
+        "mll": 0.003487,
+        "ac50": 0.003488,
+        "top": 0.003487,
+        "ac5": 0.404478,
+        "ac10": 0.404152,
+        "ac20": 0.404125,
+        "ac1sd": 0.453169,
+        "bmd": 0.449533,
+        "tp": 0.592655,
+        "q": 0.940191,
+        "ga": 0.592655,
+        "la": 0.940191,
+        "ac50_loss": 0.940193,
+        "b": 0.86064,
+        "acc": 0.872073,
+        "loec": 0.986581,
+        "resp_unit": 0.0,
+        "conc_unit": 0.005649,
+        "mc6_flags": 0.066778,
+        "flag.length": 0.0
+      },
+      "all_null_columns": [],
+      "warnings": [],
+      "status": "PASS"
+    }
+  ],
+  "bb:datapackage_conformance": {
+    "issues": [],
+    "conforms": true
+  },
+  "bb:web_validation": null
+}

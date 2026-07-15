@@ -1,8 +1,14 @@
 stages:
-  build: 
-    cmd: Rscript stages/download.R
+  download:
+    cmd: uv run python stages/01_download.py
     deps:
-      - https://clowder.edap-cluster.com/spaces/62bb560ee4b07abf29f88fef
-      - stages/download.R
+      - stages/01_download.py
     outs:
-      - brick/invitrodb.parquet
+      - download
+  build:
+    cmd: uv run python stages/02_build.py
+    deps:
+      - stages/02_build.py
+      - download
+    outs:
+      - brick

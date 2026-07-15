@@ -1,0 +1,272 @@
+{
+  "@context": "http://www.w3.org/ns/csvw",
+  "tables": [
+    {
+      "url": "brick/invitrodb.parquet",
+      "tableSchema": {
+        "columns": [
+          {
+            "name": "spid",
+            "datatype": "string"
+          },
+          {
+            "name": "chid",
+            "datatype": "integer"
+          },
+          {
+            "name": "casn",
+            "datatype": "string"
+          },
+          {
+            "name": "chnm",
+            "datatype": "string"
+          },
+          {
+            "name": "dsstox_substance_id",
+            "datatype": "string"
+          },
+          {
+            "name": "code",
+            "datatype": "string"
+          },
+          {
+            "name": "aeid",
+            "datatype": "integer"
+          },
+          {
+            "name": "aenm",
+            "datatype": "string"
+          },
+          {
+            "name": "m4id",
+            "datatype": "integer"
+          },
+          {
+            "name": "bmad",
+            "datatype": "number"
+          },
+          {
+            "name": "resp_max",
+            "datatype": "number"
+          },
+          {
+            "name": "resp_min",
+            "datatype": "number"
+          },
+          {
+            "name": "max_mean",
+            "datatype": "number"
+          },
+          {
+            "name": "max_mean_conc",
+            "datatype": "number"
+          },
+          {
+            "name": "min_mean",
+            "datatype": "number"
+          },
+          {
+            "name": "min_mean_conc",
+            "datatype": "number"
+          },
+          {
+            "name": "max_med",
+            "datatype": "number"
+          },
+          {
+            "name": "max_med_conc",
+            "datatype": "number"
+          },
+          {
+            "name": "min_med",
+            "datatype": "number"
+          },
+          {
+            "name": "min_med_conc",
+            "datatype": "number"
+          },
+          {
+            "name": "max_med_diff",
+            "datatype": "number"
+          },
+          {
+            "name": "max_med_diff_conc",
+            "datatype": "number"
+          },
+          {
+            "name": "conc_max",
+            "datatype": "number"
+          },
+          {
+            "name": "conc_min",
+            "datatype": "number"
+          },
+          {
+            "name": "nconc",
+            "datatype": "integer"
+          },
+          {
+            "name": "npts",
+            "datatype": "integer"
+          },
+          {
+            "name": "nrep",
+            "datatype": "number"
+          },
+          {
+            "name": "nmed_gtbl_pos",
+            "datatype": "integer"
+          },
+          {
+            "name": "nmed_gtbl_neg",
+            "datatype": "integer"
+          },
+          {
+            "name": "m5id",
+            "datatype": "integer"
+          },
+          {
+            "name": "modl",
+            "datatype": "string"
+          },
+          {
+            "name": "hitc",
+            "datatype": "number"
+          },
+          {
+            "name": "fitc",
+            "datatype": "integer"
+          },
+          {
+            "name": "coff",
+            "datatype": "number"
+          },
+          {
+            "name": "model_type",
+            "datatype": "integer"
+          },
+          {
+            "name": "bmr",
+            "datatype": "number"
+          },
+          {
+            "name": "hitcall",
+            "datatype": "number"
+          },
+          {
+            "name": "top_over_cutoff",
+            "datatype": "number"
+          },
+          {
+            "name": "rmse",
+            "datatype": "number"
+          },
+          {
+            "name": "a",
+            "datatype": "number"
+          },
+          {
+            "name": "p",
+            "datatype": "number"
+          },
+          {
+            "name": "er",
+            "datatype": "number"
+          },
+          {
+            "name": "bmdl",
+            "datatype": "number"
+          },
+          {
+            "name": "bmdu",
+            "datatype": "number"
+          },
+          {
+            "name": "caikwt",
+            "datatype": "number"
+          },
+          {
+            "name": "mll",
+            "datatype": "number"
+          },
+          {
+            "name": "ac50",
+            "datatype": "number"
+          },
+          {
+            "name": "top",
+            "datatype": "number"
+          },
+          {
+            "name": "ac5",
+            "datatype": "number"
+          },
+          {
+            "name": "ac10",
+            "datatype": "number"
+          },
+          {
+            "name": "ac20",
+            "datatype": "number"
+          },
+          {
+            "name": "ac1sd",
+            "datatype": "number"
+          },
+          {
+            "name": "bmd",
+            "datatype": "number"
+          },
+          {
+            "name": "tp",
+            "datatype": "number"
+          },
+          {
+            "name": "q",
+            "datatype": "number"
+          },
+          {
+            "name": "ga",
+            "datatype": "number"
+          },
+          {
+            "name": "la",
+            "datatype": "number"
+          },
+          {
+            "name": "ac50_loss",
+            "datatype": "number"
+          },
+          {
+            "name": "b",
+            "datatype": "number"
+          },
+          {
+            "name": "acc",
+            "datatype": "number"
+          },
+          {
+            "name": "loec",
+            "datatype": "number"
+          },
+          {
+            "name": "resp_unit",
+            "datatype": "string"
+          },
+          {
+            "name": "conc_unit",
+            "datatype": "string"
+          },
+          {
+            "name": "mc6_flags",
+            "datatype": "string"
+          },
+          {
+            "name": "flag.length",
+            "datatype": "number"
+          }
+        ]
+      }
+    }
+  ]
+}

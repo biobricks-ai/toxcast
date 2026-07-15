@@ -1,0 +1,32 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "schema": "https://schema.org/",
+    "bb": "https://brickyard.biobricks.ai/ns#",
+    "csvw": "http://www.w3.org/ns/csvw#"
+  },
+  "@type": "dcat:Catalog",
+  "@id": "https://brickyard.biobricks.ai/brick/toxcast",
+  "dcterms:title": "toxcast catalog",
+  "dcterms:description": "Aggregator brick modeled as a DCAT Catalog: 1 datasets (4 distributions / 3,527,285 rows). Each dcat:Dataset is a source record with its own manifest at brick/<record>/dataset.jsonld and one dcat:Distribution per parquet table.",
+  "prov:generatedAtTime": "2026-07-06T00:00:00Z",
+  "bb:generator": "tools/bb_catalog_manifest.py",
+  "bb:n_datasets": 1,
+  "bb:n_distributions": 4,
+  "bb:n_rows": 3527285,
+  "dcat:dataset": [
+    {
+      "@type": "dcat:Dataset",
+      "@id": "urn:bb:record:invitrodb.parquet",
+      "dcterms:identifier": "invitrodb.parquet",
+      "dcterms:title": null,
+      "dcterms:license": null,
+      "bb:kind": null,
+      "bb:n_tables": 4,
+      "bb:n_rows": 3527285,
+      "bb:manifest": "brick/invitrodb.parquet/dataset.jsonld"
+    }
+  ]
+}

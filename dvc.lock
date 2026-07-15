@@ -1,20 +1,35 @@
----
 schema: '2.0'
 stages:
   build:
-    cmd: Rscript stages/download.R
+    cmd: uv run python stages/02_build.py
     deps:
-    - checksum: '308151993323152722451194344924838091589'
+    - path: download
       hash: md5
-      path: https://clowder.edap-cluster.com/spaces/62bb560ee4b07abf29f88fef
-      size: 33866
-    - hash: md5
-      md5: ec800973d471bab40b8abda8e60f39cc
-      path: stages/download.R
-      size: 1025
+      md5: 65c7f302c32bbb88c5ab16f2d675229f.dir
+      size: 7502075199
+      nfiles: 1
+    - path: stages/02_build.py
+      hash: md5
+      md5: 1db510e1893c5357b7555c2368568692
+      size: 2524
+      isexec: true
     outs:
-    - hash: md5
-      md5: 110a6e966af64a8ad0c686b7bf8c908e.dir
+    - path: brick
+      hash: md5
+      md5: 1dda6a53f75c17d913ca7be0dbb8f1a3.dir
+      size: 783268567
       nfiles: 4
-      path: brick/invitrodb.parquet
-      size: 718228060
+  download:
+    cmd: uv run python stages/01_download.py
+    deps:
+    - path: stages/01_download.py
+      hash: md5
+      md5: 937c46519819b655c666631a3990712a
+      size: 1716
+      isexec: true
+    outs:
+    - path: download
+      hash: md5
+      md5: 65c7f302c32bbb88c5ab16f2d675229f.dir
+      size: 7502075199
+      nfiles: 1

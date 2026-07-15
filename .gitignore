@@ -1,3 +1,5 @@
-logs
+/brick
 /download
-/list
+/.venv
+__pycache__/
+*.pyc
